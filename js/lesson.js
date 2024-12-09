@@ -53,4 +53,6 @@ tabsParent.onclick = (event) => {
     }
 }
 
+console.log('ok')
+
 
