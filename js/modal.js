@@ -10,7 +10,7 @@ const openModal = () => {
 }
 const closeModal = () => {
     modal.style.display = "none";
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = "auto";
 }
 
 modalTrigger.onclick = openModal;
@@ -21,8 +21,13 @@ modal.onclick = (event) => {
    }
 }
 
+const scrollBottom = () => {
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
+        openModal();
+        window.removeEventListener("scroll", scrollBottom);
+    }
+};
 
-// addEventListener('scroll')
-// removeEventListener('scroll',)
+window.addEventListener("scroll", scrollBottom);
 
-
+setTimeout(openModal, 10000)

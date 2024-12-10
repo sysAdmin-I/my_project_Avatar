@@ -25,6 +25,7 @@
 const tabContentBlocks = document.querySelectorAll('.tab_content_block');
 const tabs = document.querySelectorAll('.tab_content_item');
 const tabsParent = document.querySelector('.tab_content_items');
+let index = 0;
 
 const hideTabContent = () => {
     tabContentBlocks.forEach(item => {
@@ -34,25 +35,37 @@ const hideTabContent = () => {
         item.classList.remove('tab_content_item_active');
     })
 }
-const showTabContent = (index = 0) => {
+const showTabContent = (t = 0) => {
     tabContentBlocks[index].style.display = 'block';
-    tabs[index].classList.add('tab_content_item_active');
+    tabs[t].classList.add('tab_content_item_active');
 }
 
 hideTabContent();
-showTabContent()
+showTabContent(index)
 
 tabsParent.onclick = (event) => {
     if (event.target.classList.contains('tab_content_item')) {
-        tabs.forEach((item, index) => {
+        tabs.forEach((item, t) => {
             if (event.target === item) {
                 hideTabContent();
-                showTabContent(index)
+                showTabContent(t)
+                index = t
             }
         })
     }
 }
 
-console.log('ok')
+const autoTabs = () => {
+    setInterval(() => {
+        index++
+        if (index >= tabContentBlocks.length) {
+            index = 0
+        }
+        hideTabContent();
+        showTabContent(index)
+    }, 3000)
+}
+
+autoTabs()
 
 
