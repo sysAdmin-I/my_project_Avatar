@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="hw2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/home_works.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/home_works.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -125,6 +127,14 @@
       <workItem from="1733844331534" duration="13363000" />
       <workItem from="1733930412802" duration="1559000" />
       <workItem from="1734000663457" duration="1174000" />
+      <workItem from="1734008838583" duration="1096000" />
+      <workItem from="1734175391946" duration="2800000" />
+      <workItem from="1734181180747" duration="29000" />
+      <workItem from="1734184696405" duration="383000" />
+      <workItem from="1734185097193" duration="8760000" />
+      <workItem from="1734244057477" duration="3010000" />
+      <workItem from="1734247111375" duration="6400000" />
+      <workItem from="1734254389204" duration="1328000" />
     </task>
     <task id="LOCAL-00001" summary="hw2">
       <option name="closed" value="true" />
