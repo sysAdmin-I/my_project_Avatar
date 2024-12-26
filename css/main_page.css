@@ -1,0 +1,313 @@
+.wrapper {
+    background: url("https://i.redd.it/avatar-2-twow-4k-wallpaper-part-5-v0-9uui23tga9va1.jpg?width=4480&format=pjpg&auto=webp&s=8989cd0fa8c514efa3d18dd24d555182aac5b9ed");
+}
+
+.gmail_block {
+    background: black;
+    padding: 100px 0;
+}
+
+#gmail_input {
+    background: rgba(37, 37, 37, 0.62);
+}
+
+.inner_gmail_block {
+    margin: 50px auto;
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid rgba(89, 89, 89, 0.5);
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.form_gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_gmail button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+.move_block {
+    background: black;
+    padding: 100px 0;
+}
+
+.inner_parent_block {
+    height: 400px;
+    width: 400px;
+    border: 1px solid var(--orange);
+    border-radius: 18px;
+}
+
+.parent_block {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 5%;
+    box-shadow: 0 0 15px 5px rgba(152, 152, 152, 0.7);
+    position: relative;
+    margin: 0 auto;
+    background: url("https://www.mirf.ru/backend/wp-content/uploads/2022/12/64e5a17f12c82b54179930449219b92b.jpg")no-repeat center;
+    object-fit: contain;
+}
+
+.child_block {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: url("../images/pngfind.com-helicopter-png-566131.png") no-repeat center;
+    background-size: contain;
+}
+
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.inner_move_block {
+    margin-top: 50px;
+}
+
+.clock {
+    --clock-size: 360px;
+    width: var(--clock-size);
+    height: var(--clock-size);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
+    color: white;
+}
+
+.spike {
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background: #fff9;
+    line-height: 20px;
+    transform-origin: 50%;
+    z-index: 5;
+    inset: 0;
+    margin: auto;
+    font-style: normal;
+    transform: rotate(var(--rotate)) translateX(var(--dail-size));
+}
+.spike:nth-child(5n+1) {
+    box-shadow: -7px 0 #fff9;
+}
+.spike:nth-child(5n+1):after {
+    content: attr(data-i);
+    position: absolute;
+    right: 22px;
+    top: -10px;
+    transition: 1s linear;
+    transform: rotate(calc( var(--dRotate) - var(--rotate)));
+}
+
+.seconds {
+    --dRotate: 0deg;
+    --dail-size: calc((var(--clock-size)/ 2) - 8px);
+    font-weight: 800;
+    font-size: 18px;
+    transform: rotate(calc( -1 * var(--dRotate)));
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 1s linear;
+}
+
+.minutes {
+    --dail-size: calc((var(--clock-size)/ 2) - 65px);
+    font-size: 16px;
+    transform: rotate(calc( -1 * var(--dRotate)));
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 1s linear;
+}
+
+.stop-anim {
+    transition: 0s linear;
+}
+.stop-anim .spike:after {
+    transition: 0s linear !important;
+}
+
+.hour {
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.minute {
+    font-size: 36px;
+    font-weight: 900;
+    position: absolute;
+    background: #000;
+    z-index: 10;
+    right: calc(var(--clock-size)/ 4.5);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.minute:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    border-right: none;
+    height: 50px;
+    left: -10px;
+    top: 50%;
+    border-radius: 40px 0 0 40px;
+    width: calc(var(--clock-size)/ 2.75);
+    transform: translatey(-50%);
+}
+
+.time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid var(--orange);
+    margin-top: 40px;
+}
+
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.stopwatch {
+    padding: 100px 0;
+    background: black;
+}
+
+.time_buttons {
+    margin: 20px auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------CHARACTERS---------*/
+
+.characters {
+    background: var(--black);
+}
+
+.characters-list {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.character-card {
+    border: 2px solid var(--orange);
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.character-photo {
+    width: 100%;
+    height: 150px;
+    border: 2px solid var(--orange);
+    margin: 0 auto;
+}
+
+.character-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://movie-screencaps.com/wp-content/uploads/2023/04/4k-avatar2-movie-screencaps.com--1024x555.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer img {
+    width: 200px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__inner {
+    margin-top: 20px;
+}
+
+.footer__inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__inner ul li {
+    margin: 0 15px;
+}
+
+.footer__inner ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer__inner ul li a:hover {
+    color: #00bcd4;
+}
+
+.footer__inner ul li a:active {
+    color: #ff5722;
+}
+
+.footer .footer-bottom {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer .footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer .footer-bottom a:hover {
+    color: white;
+}

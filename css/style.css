@@ -1,14 +1,19 @@
-/* HEADER */
+.wrapper {
+    background: url("https://i.redd.it/avatar-2-twow-4k-wallpaper-part-5-v0-9uui23tga9va1.jpg?width=4480&format=pjpg&auto=webp&s=8989cd0fa8c514efa3d18dd24d555182aac5b9ed") no-repeat center;
+}
 
 .header {
-    height: 80px;
-    background: #2c2d2f;
+    height: 100px;
     display: flex;
     align-items: center;
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
+    inset: 0;
     z-index: 2;
+    background: url("https://i.redd.it/an-extended-look-at-avatar-frontiers-of-pandora-gameplay-v0-jn2iddb27a6b1.jpg?width=7489&format=pjpg&auto=webp&s=185ae2da6dcf7defc805d17d505d93e31f02da4b") rgba(50, 50, 50, 0.47) no-repeat;
+    border-bottom: 5px;
+    box-shadow: 0 0 15px 5px rgba(152, 152, 152, 0.7);
 }
 
 .inner_header {
@@ -18,8 +23,6 @@
     justify-content: space-between;
 }
 
-/* LOGOTYPE */
-
 .logotype {
     display: flex;
     align-items: center;
@@ -27,14 +30,17 @@
     font-size: 22px;
     height: 60px;
     width: fit-content;
-    background: var(--orange);
     padding: 8px;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* HEADER MENU */
+.logotype img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .menu {
     display: flex;
@@ -43,7 +49,8 @@
 }
 
 .menu_link a {
-    color: var(--orange);
+    color: blue;
+    text-shadow: rgba(2, 96, 117, 0.73) 0 0 3px;
     text-transform: uppercase;
 }
 
@@ -51,14 +58,12 @@
     text-decoration: underline;
 }
 
-/* MAIN BLOCK */
-
 .main_block {
     padding: 100px 0;
-    background: black;
+    width: auto;
+    height: auto;
+    background-size: cover;
 }
-
-/* BUTTONS COLOR PICKER */
 
 .colors-buttons {
     display: flex;
@@ -70,8 +75,6 @@
     border-radius: 20px;
     border-color: white !important;
 }
-
-/* FOOTER */
 
 .footer {
     background: #2c2d2f;
@@ -91,12 +94,8 @@
     font-weight: 600;
 }
 
-
-/* SLIDER BLOCK */
-
 .slider_block {
     padding: 100px 0;
-    background: black;
 }
 
 .slider {
@@ -110,6 +109,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    backdrop-filter: blur(10px);
 }
 
 .slide {
@@ -150,10 +150,8 @@
     display: block;
 }
 
-/* VIDEO BLOCK */
-
 .block_video {
-    background: black;
+    backdrop-filter: blur(0px);
     padding: 100px 0;
 }
 
@@ -162,8 +160,6 @@
     justify-content: center;
     margin-top: 50px;
 }
-
-/* MODAL */
 
 .modal {
     position: fixed;
@@ -224,32 +220,6 @@
     margin-top: 10px;
 }
 
-
-/*-------BOTTLE-------*/
-
-.botlle {
-    background: black;
-    padding: 100px 0;
-}
-
-.bottle_inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bowl {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    border: 8px solid transparent;
-    animation: animate 5s linear infinite;
-    transform-origin: bottom center;
-    animation-play-state: run;
-}
-
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -267,37 +237,6 @@
         filter: hue-rotate(360deg);
     }
 }
-
-.bowl::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    height: 30px;
-    border: 15px solid #444;
-    border-radius: 50%;
-    box-shadow: 0 10px #222;
-
-}
-
-.bowl::after {
-    content: "";
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.05);
-    transform-origin: center;
-    animation: animatebowlshadow 5s linear infinite;
-    border-radius: 50%;
-    animation-play-state: running;
-
-}
-
 
 @keyframes animatebowlshadow {
     0% {
@@ -325,7 +264,6 @@
 
     }
 }
-
 
 .liquid {
     position: absolute;
@@ -426,3 +364,75 @@
     100% {
     }
 }
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapercg.com/download/avatar-frontiers-of-pandora-wallpaper--14699.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 450px;
+    border-top: 5px solid rgba(97, 97, 97, 0.5);
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer img {
+    width: 200px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__inner {
+    margin-top: 20px;
+}
+
+.footer__inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__inner ul li {
+    margin: 0 15px;
+}
+
+.footer__inner ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer__inner ul li a:hover {
+    color: #00bcd4;
+}
+
+.footer__inner ul li a:active {
+    color: #ff5722;
+}
+
+.footer .footer-bottom {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer .footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer .footer-bottom a:hover {
+    color: white;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Works</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/main_page.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="../index.html">
+                    <div class="logotype">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/avatar_nav_logo_c08aa297.png?region=0,0,500,158" alt="logo">
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="../pages/main_page.html">AVATAR 2</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="page2.html">Lessons</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="cards.html">cards</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Gmail Block</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_gmail_block">
+        <div class="form_gmail">
+            <label for="gmail_input"></label>
+            <input type="text" id="gmail_input" placeholder="your gmail">
+            <button class="btn" id="gmail_button">Check gmail</button>
+            <span class="checker" id="gmail_result"></span>
+        </div>
+    </div>
+
+    <div class="inner_move_block">
+        <div class="parent_block">
+            <div class="child_block"></div>
+        </div>
+    </div>
+
+    <div class="time">
+        <div class="time_block">
+            <div class="interval" id="seconds">0</div>
+        </div>
+    </div>
+    <div class="time_buttons">
+        <button class="btn" id="start">Start</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="reset">Reset</button>
+    </div>
+
+<!--    <div class="characters">-->
+<!--        <div class="container">-->
+<!--            <div class="characters-list">-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="footer">
+        <div class="container">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/avatar_nav_logo_c08aa297.png?region=0,0,500,158" alt="logo">
+        </div>
+        <div class="footer__inner">
+            <ul>
+                <li><a href="../index.html">AVATAR 1</a></li>
+                <li><a href="../pages/main_page.html">AVATAR 2</a></li>
+                <li><a href="../pages/cards.html">CARDS</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Avatar Movie</p>
+        </div>
+    </div>
+
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../js/main_page.js"></script>
+<script src="../js/modal.js"></script>
+</html>

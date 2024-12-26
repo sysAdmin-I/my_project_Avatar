@@ -109,3 +109,67 @@ converter(eurInput, somInput, usdInput);
 
 // DRY - don't repeat yourself
 // KISS - keep it super simple
+
+// CARD SWITCHER
+
+const cardBlock = document.querySelector('.card');
+const btnNext = document.querySelector('#btn-next');
+const btnPrev = document.querySelector('#btn-prev');
+
+let cardId = 1
+const maxCardId = 200
+
+const card = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(response => response.json())
+        .then(data => {
+            const { title, completed, id } = data;
+            cardBlock.innerHTML = `
+               <p>${title}</p>
+               <p>${completed}</p>
+               <span>${id}</span>
+            `;
+        });
+};
+
+card(cardId);
+
+btnNext.onclick = () => {
+    cardId = cardId < maxCardId ? cardId + 1 : 1;
+    card(cardId)
+};
+
+btnPrev.onclick = () => {
+    cardId = cardId > 1 ? cardId - 1 : maxCardId;
+    card(cardId)
+};
+
+setInterval(() => {
+    cardId = cardId < maxCardId ? cardId + 1 : 1;
+    card(cardId)
+}, 7000)
+
+// WEATHER
+
+const searchInput = document.querySelector('.cityName');
+const searchButton = document.querySelector('#search');
+const city = document.querySelector('.city');
+const temp = document.querySelector('.temp');
+const weatherIcon = document. querySelector ('#weather_icon');
+
+const API_URL = 'http://api.openweathermap.org/data/2.5/weather'
+const API_KEY = 'e417df62e04d3b1b111abeab19cea714'
+
+searchButton.onclick = async () => {
+    try {
+        const response = await fetch(`${API_URL}?appid=${API_KEY}&q=${searchInput.value}&units=metric&lang=RU`)
+        const data = await response.json()
+        city.innerHTML = data.name || 'Город не найден'
+        temp.innerHTML = data.main?.temp ? Math.round(data.main?.temp) + '&deg;C' : '///'
+        weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+        searchInput.value = ''
+    } catch (error) {
+        console.log(error)
+    }
+}
+
