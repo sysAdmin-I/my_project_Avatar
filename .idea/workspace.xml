@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="hw2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page2.html" afterDir="false" />
@@ -211,7 +201,7 @@
       <workItem from="1735323716393" duration="486000" />
       <workItem from="1735324241273" duration="96000" />
       <workItem from="1735324346848" duration="10814000" />
-      <workItem from="1735336700944" duration="10076000" />
+      <workItem from="1735336700944" duration="10794000" />
     </task>
     <task id="LOCAL-00001" summary="hw2">
       <option name="closed" value="true" />
