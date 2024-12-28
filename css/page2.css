@@ -3,29 +3,35 @@
     background-size: cover;
 }
 
-.phone_block {
-    padding: 100px 0;
+#gmail_input {
+    margin-top: 10px;
+    background: rgba(37, 37, 37, 0.62);
+    width: 100%;
 }
 
-.inner_phone_block {
-    backdrop-filter: blur(5px);
-    margin-top: 50px;
+.form_gmail {
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid var(--orange);
-    height: 300px;
-    border-radius: 20px;
+    flex-direction: column;
     align-items: center;
+    width: 416px;
+}
+
+.form_gmail button {
+    width: 100%;
+    margin: 20px 0;
 }
 
 #phone_input {
     background: rgba(37, 37, 37, 0.62);
+    width: 100%;
+    margin-top: 10px;
 }
 
 .form_phone {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 416px;
 }
 
 .form_phone button {
@@ -91,6 +97,133 @@
     margin-top: 50px;
 }
 
+.clock {
+    --clock-size: 360px;
+    width: var(--clock-size);
+    height: var(--clock-size);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
+    color: white;
+}
+
+.spike {
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background: #fff9;
+    line-height: 20px;
+    transform-origin: 50%;
+    z-index: 5;
+    inset: 0;
+    margin: auto;
+    font-style: normal;
+    transform: rotate(var(--rotate)) translateX(var(--dail-size));
+}
+.spike:nth-child(5n+1) {
+    box-shadow: -7px 0 #fff9;
+}
+.spike:nth-child(5n+1):after {
+    content: attr(data-i);
+    position: absolute;
+    right: 22px;
+    top: -10px;
+    transition: 1s linear;
+    transform: rotate(calc( var(--dRotate) - var(--rotate)));
+}
+
+.seconds {
+    --dRotate: 0deg;
+    --dail-size: calc((var(--clock-size)/ 2) - 8px);
+    font-weight: 800;
+    font-size: 18px;
+    transform: rotate(calc( -1 * var(--dRotate)));
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 1s linear;
+}
+
+.minutes {
+    --dail-size: calc((var(--clock-size)/ 2) - 65px);
+    font-size: 16px;
+    transform: rotate(calc( -1 * var(--dRotate)));
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 1s linear;
+}
+
+.stop-anim {
+    transition: 0s linear;
+}
+.stop-anim .spike:after {
+    transition: 0s linear !important;
+}
+
+.hour {
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.minute {
+    font-size: 36px;
+    font-weight: 900;
+    position: absolute;
+    background: #000;
+    z-index: 10;
+    right: calc(var(--clock-size)/ 4.5);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.minute:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    border-right: none;
+    height: 50px;
+    left: -10px;
+    top: 50%;
+    border-radius: 40px 0 0 40px;
+    width: calc(var(--clock-size)/ 2.75);
+    transform: translatey(-50%);
+}
+
+.time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid var(--orange);
+    margin-top: 40px;
+}
+
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.stopwatch {
+    padding: 100px 0;
+    background: black;
+}
+
+.time_buttons {
+    margin: 20px auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .card_switcher {
     padding: 100px 0;
 }
@@ -131,7 +264,6 @@
 
 .converter {
     padding: 100px 0;
-    background: rgba(37, 37, 37, 0.27);
 }
 
 .converter h3 {

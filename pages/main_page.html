@@ -23,50 +23,62 @@
                         <a href="../pages/main_page.html">AVATAR 2</a>
                     </li>
                     <li class="menu_link">
-                        <a href="page2.html">Lessons</a>
+                        <a href="page2.html">Others</a>
                     </li>
                     <li class="menu_link">
-                        <a href="cards.html">cards</a>
+                        <a href="cards.html">Cards</a>
                     </li>
                 </ul>
-                <button class="btn" id="btn-get">Gmail Block</button>
+                <button class="btn" id="btn-get"></button>
             </div>
         </div>
     </div>
 
-    <div class="inner_gmail_block">
-        <div class="form_gmail">
-            <label for="gmail_input"></label>
-            <input type="text" id="gmail_input" placeholder="your gmail">
-            <button class="btn" id="gmail_button">Check gmail</button>
-            <span class="checker" id="gmail_result"></span>
-        </div>
-    </div>
-
     <div class="inner_move_block">
+        <h2>Карта города "Плацдарм"</h2>
         <div class="parent_block">
             <div class="child_block"></div>
         </div>
     </div>
 
-    <div class="time">
-        <div class="time_block">
-            <div class="interval" id="seconds">0</div>
+    <div class="block_video2">
+        <div class="container">
+            <h3>Трейлер фильма аватар</h3>
+            <div class="inner_block_video2">
+                <iframe
+                        id="trailer_avatar2"
+                        src="https://rutube.ru/play/embed/69c010a4337fe31aecba804c452d2825"
+                        frameBorder="0"
+                        allow="clipboard-write; autoplay"
+                        webkitAllowFullScreen
+                        mozallowfullscreen
+                        allowFullScreen
+                ></iframe><div class="trailer_text2">
+                <p>
+                    После принятия образа аватара солдат Джейк Салли становится предводителем народа
+                    на`ви и берет на себя миссию по защите новых друзей от корыстных бизнесменов с Земли.
+                    Теперь ему есть за кого бороться — с Джейком его прекрасная возлюбленная Нейтири.
+                    Когда на Пандору возвращаются до зубов вооруженные земляне, Джейк готов дать им отпор.
+                </p>
+            </div>
+            </div>
         </div>
     </div>
-    <div class="time_buttons">
-        <button class="btn" id="start">Start</button>
-        <button class="btn" id="stop">Stop</button>
-        <button class="btn" id="reset">Reset</button>
+
+    <div class="media_block2">
+        <div class="inner_media_avatar2">
+            <h3>Фильм аватар 2</h3>
+            <iframe
+                    id="media_avatar2"
+                    src="https://rutube.ru/play/embed/633df1f2b8ccf9202aa456f672ff8eed"
+                    frameBorder="0"
+                    allow="clipboard-write; autoplay"
+                    webkitAllowFullScreen
+                    mozallowfullscreen
+                    allowFullScreen
+            ></iframe>
+        </div>
     </div>
-
-<!--    <div class="characters">-->
-<!--        <div class="container">-->
-<!--            <div class="characters-list">-->
-
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 
     <div class="footer">
         <div class="container">
@@ -88,10 +100,21 @@
     <div class="modal_dialog">
         <div class="modal_content">
             <form action="#">
-                <div class="modal_close">&times;</div>
+                <div class="modal_close">&#10006;</div>
                 <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
                 <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <div class="form_gmail">
+                    <label for="gmail_input"></label>
+                    <input type="text" id="gmail_input" name="gmail" required placeholder="Ваша почта">
+                    <label for="phone_input"></label>
+                    <input type="text" id="phone_input" name="phone" required placeholder="+996 XXX XX-XX-XX" class="modal_input">
+                    <button class="btn" id="gmail_button">Check gmail</button>
+                    <span class="checker" id="gmail_result"></span>
+                </div>
+                <div class="form_phone">
+                    <button class="btn" id="phone_button">Check number</button>
+                    <span class="checker" id="phone_result"></span>
+                </div>
                 <button class="btn btn_dark btn_min">Перезвонить мне</button>
             </form>
         </div>

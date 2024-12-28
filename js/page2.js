@@ -1,29 +1,10 @@
-// урок 1
-
-// Phone block
-
-const phoneInput = document.querySelector("#phone_input");
-const phoneButton = document.querySelector("#phone_button");
-const phoneResult = document.querySelector("#phone_result");
-
-const regExp = /^\+996 [2579]\d{2} \d{2}-\d{2}-\d{2}$/
-
-phoneButton.onclick = () => {
-    if (regExp.test(phoneInput.value)) {
-        phoneResult.innerHTML = 'OK'
-        phoneResult.style.color = 'green'
-    } else {
-        phoneResult.innerHTML = 'invalid phone number'
-        phoneResult.style.color = 'red'
-    }
-}
 
 //tab slider
 
 const tabContentBlocks = document.querySelectorAll('.tab_content_block');
 const tabs = document.querySelectorAll('.tab_content_item');
 const tabsParent = document.querySelector('.tab_content_items');
-let index = 0;
+let index1 = 0;
 
 const hideTabContent = () => {
     tabContentBlocks.forEach(item => {
@@ -34,12 +15,12 @@ const hideTabContent = () => {
     })
 }
 const showTabContent = (t = 0) => {
-    tabContentBlocks[index].style.display = 'block';
+    tabContentBlocks[index1].style.display = 'block';
     tabs[t].classList.add('tab_content_item_active');
 }
 
 hideTabContent();
-showTabContent(index)
+showTabContent(index1)
 
 tabsParent.onclick = (event) => {
     if (event.target.classList.contains('tab_content_item')) {
@@ -47,7 +28,7 @@ tabsParent.onclick = (event) => {
             if (event.target === item) {
                 hideTabContent();
                 showTabContent(t)
-                index = t
+                index1 = t
             }
         })
     }
@@ -55,16 +36,120 @@ tabsParent.onclick = (event) => {
 
 const autoTabs = () => {
     setInterval(() => {
-        index++
-        if (index >= tabContentBlocks.length) {
-            index = 0
+        index1++
+        if (index1 >= tabContentBlocks.length) {
+            index1 = 0
         }
         hideTabContent();
-        showTabContent(index)
+        showTabContent(index1)
     }, 3000)
 }
 
 autoTabs()
+
+// SLIDER BLOCK
+
+const slides = document.querySelectorAll('.slide')
+const next = document.querySelector('#next')
+const prev = document.querySelector('#prev')
+let index = 0
+
+const hideSlide = () => {
+    slides.forEach((slide) => {
+        slide.style.opacity = 0
+        slide.classList.remove('active_slide')
+    })
+}
+const showSlide = (i = 0) => {
+    slides[i].style.opacity = 1
+    slides[i].classList.add('active_slide')
+}
+
+hideSlide()
+showSlide(index)
+
+
+const autoSlider = (i = 0) => {
+    setInterval(() => {
+        i++
+        if (i > slides.length - 1) {
+            i = 0
+        }
+        hideSlide()
+        showSlide(i)
+    }, 10000)
+}
+
+next.onclick = () => {
+    index < slides.length - 1 ? index++ : index = 0
+    hideSlide()
+    showSlide(index)
+}
+
+prev.onclick = () => {
+    index > 0 ? index-- : index = slides.length - 1
+    hideSlide()
+    showSlide(index)
+}
+
+autoSlider(index)
+
+// Time block
+
+const secondsResume = document.querySelector("#seconds")
+const startBtn = document.querySelector("#start")
+const stopBtn = document.querySelector("#stop")
+const resetBtn = document.querySelector("#reset")
+
+let seconds = 0
+let time = false;
+let interval;
+
+stopBtn.disabled = true
+
+function secondsUpdate() {
+    secondsResume.textContent = seconds
+}
+
+function startSeconds() {
+    if (!time) {
+        time = true;
+        stopBtn.disabled = false;
+        interval = setInterval(() => {
+            seconds++;
+            secondsUpdate();
+        }, 1000);
+        secondsResume.style.color = "green";
+
+        setTimeout(() => {
+            secondsResume.style.color = "";
+        }, 1500);
+    }
+}
+
+function stopSeconds() {
+    clearInterval(interval);
+    time = false;
+    stopBtn.disabled = true;
+    secondsResume.style.color = "red";
+
+    setTimeout(() => {
+        secondsResume.style.color = "";
+    }, 1500);
+}
+
+function resetSeconds() {
+    clearInterval(interval);
+    seconds = 0;
+    secondsUpdate();
+    time = false;
+    stopBtn.disabled = true;
+}
+
+startBtn.onclick = function () {startSeconds()}
+stopBtn.onclick = function () {stopSeconds()}
+resetBtn.onclick = function () {resetSeconds()}
+
 
 // Converter
 

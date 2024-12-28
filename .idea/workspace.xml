@@ -6,21 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="hw2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cards.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home_works.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/lessons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/monster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/any.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/any.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/persons.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/persons.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/home_works.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main_page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/monster.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_works.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/lessons.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/monster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sysAdmin-I/HW_JS_3mounth.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/sysAdmin-I/my_project_Avatar.git&quot;,
     &quot;accountId&quot;: &quot;455fdb14-0e28-4996-812b-bb55e4c0e13a&quot;
   }
 }</component>
@@ -205,6 +203,15 @@
       <workItem from="1735166599789" duration="8320000" />
       <workItem from="1735219201129" duration="55000" />
       <workItem from="1735221735268" duration="435000" />
+      <workItem from="1735224062782" duration="14221000" />
+      <workItem from="1735317977412" duration="55000" />
+      <workItem from="1735318912454" duration="905000" />
+      <workItem from="1735322524333" duration="137000" />
+      <workItem from="1735322691320" duration="509000" />
+      <workItem from="1735323716393" duration="486000" />
+      <workItem from="1735324241273" duration="96000" />
+      <workItem from="1735324346848" duration="10814000" />
+      <workItem from="1735336700944" duration="10076000" />
     </task>
     <task id="LOCAL-00001" summary="hw2">
       <option name="closed" value="true" />

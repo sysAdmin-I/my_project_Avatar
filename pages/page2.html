@@ -23,26 +23,13 @@
                         <a href="main_page.html">AVATAR 2</a>
                     </li>
                     <li class="menu_link">
-                        <a href="../pages/page2.html">Lessons</a>
+                        <a href="../pages/page2.html">Others</a>
                     </li>
                     <li class="menu_link">
-                        <a href="cards.html">cards</a>
+                        <a href="cards.html">Cards</a>
                     </li>
                 </ul>
-                <button class="btn" id="btn-get">Gmail block</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="phone_block">
-        <div class="container">
-            <div class="inner_phone_block">
-                <div class="form_phone">
-                    <label for="phone_input">Phone Number</label>
-                    <input type="text" id="phone_input" placeholder="+996 XXX XX-XX-XX">
-                    <button class="btn" id="phone_button">Check number</button>
-                    <span class="checker" id="phone_result"></span>
-                </div>
+                <button class="btn" id="btn-get"></button>
             </div>
         </div>
     </div>
@@ -99,6 +86,56 @@
         </div>
     </div>
 
+    <div class="slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;prev</button>
+                    <div class="slide active_slide">
+                        <div class="slide_card">
+                            <h3>regular expression</h3>
+                            <p>Простыми словами, регулярное выражение - это набор символов, который задает определенные правила для поиска и сопоставления текста. Вы можете использовать регулярные выражения, чтобы найти определенные строки в тексте, заменить части строки на другие значения или извлечь нужную информацию из текста.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>recursion</h3>
+                            <p>Простыми словами, рекурсия - это, когда функция делает повторяющиеся вызовы самой себя для решения задачи, пока не достигнет определенного условия выхода из рекурсии.</p>
+                            <a href="https://learn.javascript.ru/recursion" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>json</h3>
+                            <p>Простыми словами, JSON - это способ представления данных в виде текста, чтобы они могли быть легко поняты и использованы различными программами. Он использует простые правила для описания объектов и массивов, а также для представления простых типов данных, таких как строки, числа, логические значения и т.д.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>event loop</h3>
+                            <p>Простыми словами, event loop похож на дежурного, который непрерывно проверяет, произошло ли какое-либо событие, и реагирует на него, когда оно происходит. Он имеет список задач, которые нужно выполнить, и он перебирает этот список событий одно за другим, обрабатывая каждое событие, когда оно наступает.</p>
+                            <a href="https://highload.today/kak-ustroen-event-loop-v-javascript-parallelnaya-model-i-tsikl-sobytij/" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="time">
+        <div class="time_block">
+            <div class="interval" id="seconds">0</div>
+        </div>
+    </div>
+    <div class="time_buttons">
+        <button class="btn" id="start">Start</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="reset">Reset</button>
+    </div>
+
     <div class="converter">
         <div class="container">
             <h3>CONVERTER</h3>
@@ -116,6 +153,13 @@
                     <input type="number" id="eur">
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="inner_move_block">
+        <h2>Карта города "Плацдарм"</h2>
+        <div class="parent_block">
+            <div class="child_block"></div>
         </div>
     </div>
 
@@ -171,7 +215,18 @@
                 <div class="modal_close">&#10006;</div>
                 <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
                 <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <div class="form_gmail">
+                    <label for="gmail_input"></label>
+                    <input type="text" id="gmail_input" name="gmail" required placeholder="Ваша почта">
+                    <label for="phone_input"></label>
+                    <input type="text" id="phone_input" name="phone" required placeholder="+996 XXX XX-XX-XX" class="modal_input">
+                    <button class="btn" id="gmail_button">Check gmail</button>
+                    <span class="checker" id="gmail_result"></span>
+                </div>
+                <div class="form_phone">
+                    <button class="btn" id="phone_button">Check number</button>
+                    <span class="checker" id="phone_result"></span>
+                </div>
                 <button class="btn btn_dark btn_min">Перезвонить мне</button>
             </form>
         </div>

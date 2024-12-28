@@ -1,5 +1,6 @@
 .wrapper {
-    background: url("https://i.redd.it/avatar-2-twow-4k-wallpaper-part-5-v0-9uui23tga9va1.jpg?width=4480&format=pjpg&auto=webp&s=8989cd0fa8c514efa3d18dd24d555182aac5b9ed") no-repeat center;
+    background: url("https://gl.weburg.net/00/movies/3/10772/original/411538.jpg") no-repeat bottom fixed;
+    background-size: cover;
 }
 
 .header {
@@ -7,10 +8,10 @@
     display: flex;
     align-items: center;
     width: 100%;
-    position: relative;
+    position: fixed;
     top: 0;
     inset: 0;
-    z-index: 2;
+    z-index: 3;
     background: url("https://i.redd.it/an-extended-look-at-avatar-frontiers-of-pandora-gameplay-v0-jn2iddb27a6b1.jpg?width=7489&format=pjpg&auto=webp&s=185ae2da6dcf7defc805d17d505d93e31f02da4b") rgba(50, 50, 50, 0.47) no-repeat;
     border-bottom: 5px;
     box-shadow: 0 0 15px 5px rgba(152, 152, 152, 0.7);
@@ -21,6 +22,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#gmail_input {
+    margin-top: 10px;
+    background: rgba(37, 37, 37, 0.62);
+    width: 100%;
+}
+
+.form_gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 416px;
+}
+
+.form_gmail button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#phone_input {
+    background: rgba(37, 37, 37, 0.62);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form_phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 416px;
+}
+
+.form_phone button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.media_block1 {
+    position: relative;
+    width: 1680px;
+    height: auto;
+    padding: 120px;
+}
+
+.inner_media_avatar1 {
+    position: relative;
+    width: 1440px;
+    height: 808px;
+    margin: 100px auto;
+}
+
+#media_avatar1 {
+    width: 100%;
+    height: 100%;
 }
 
 .logotype {
@@ -42,6 +98,16 @@
     object-fit: cover;
 }
 
+.inner_main h1 {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.88);
+    text-shadow: rgba(0, 187, 255, 0.84) 0  0 10px;
+}
+
+#js-color {
+    text-shadow: none;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -49,13 +115,9 @@
 }
 
 .menu_link a {
-    color: blue;
-    text-shadow: rgba(2, 96, 117, 0.73) 0 0 3px;
+    color: #3586ef;
+    text-shadow: rgba(5, 199, 255, 0.73) 0 0 5px;
     text-transform: uppercase;
-}
-
-.menu_link a:hover {
-    text-decoration: underline;
 }
 
 .main_block {
@@ -74,6 +136,15 @@
 .btn-color {
     border-radius: 20px;
     border-color: white !important;
+}
+
+#btn-get {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSmVALt-bSK--FS830v3ciGyT82wfgmBmJgzhrrN3xSi4wj9-TVEiBQBjzqYbFtT1Y0OA&usqp=CAU") no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(0, 16, 96, 0.6);
 }
 
 .footer {
@@ -150,16 +221,52 @@
     display: block;
 }
 
-.block_video {
-    backdrop-filter: blur(0px);
-    padding: 100px 0;
+.inner_block_video1 {
+    margin-top: 50px;
+    width: 1440px;
+    position: relative;
+    right: 115px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.inner_block_video {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+#trailer_avatar1 {
+    width: 1024px;
+    height: 500px;
 }
+
+.trailer_text1 {
+    color: white;
+    width: 500px;
+    height: 500px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.inner_media_avatar1 h3 {
+    color: white;
+    font-size: 35px;
+    margin: 50px;
+}
+
+#gmail_input {
+    margin-top: 10px;
+    background: rgba(37, 37, 37, 0.62);
+    width: 100%;
+}
+
+.form_gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 416px;
+}
+
+.form_gmail button {
+    width: 100%;
+    margin: 20px 0;
+}
+
 
 .modal {
     position: fixed;
@@ -182,8 +289,8 @@
     position: relative;
     width: 100%;
     padding: 40px;
-    background-color: black;
-    border: 2px solid var(--orange);
+    background: linear-gradient(-45deg, rgba(5, 24, 39, 0.64), rgba(51, 53, 182, 0.38));
+    border: 3px solid #23acd6;
     border-radius: 4px;
     max-height: 80vh;
     overflow-y: auto;
@@ -366,14 +473,13 @@
 }
 
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapercg.com/download/avatar-frontiers-of-pandora-wallpaper--14699.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.mirf.ru/backend/wp-content/uploads/2023/12/f5f043c4403fa2f6f7aa7ac16d42e3ab.png")no-repeat bottom;
     background-size: cover;
-    background-position: center;
     padding: 40px 0;
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
-    height: 450px;
+    height: 230px;
     border-top: 5px solid rgba(97, 97, 97, 0.5);
 }
 
@@ -408,7 +514,7 @@
 
 .footer__inner ul li a {
     text-decoration: none;
-    color: white;
+    color: #8ec9ea;
     font-size: 16px;
     transition: color 0.3s ease;
 }

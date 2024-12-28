@@ -25,13 +25,13 @@
                             <a href="main_page.html">AVATAR 2</a>
                         </li>
                         <li class="menu_link">
-                            <a href="../pages/page2.html">Lessons</a>
+                            <a href="../pages/page2.html">Others</a>
                         </li>
                         <li class="menu_link">
-                            <a href="../pages/cards.html">cards</a>
+                            <a href="../pages/cards.html">Cards</a>
                         </li>
                     </ul>
-                    <button class="btn" id="btn-get">Gmail block</button>
+                    <button class="btn" id="btn-get"></button>
                 </div>
             </div>
         </div>
@@ -66,7 +66,18 @@
                     <div class="modal_close">&#10006;</div>
                     <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                    <div class="form_gmail">
+                        <label for="gmail_input"></label>
+                        <input type="text" id="gmail_input" name="gmail" required placeholder="Ваша почта">
+                        <label for="phone_input"></label>
+                        <input type="text" id="phone_input" name="phone" required placeholder="+996 XXX XX-XX-XX" class="modal_input">
+                        <button class="btn" id="gmail_button">Check gmail</button>
+                        <span class="checker" id="gmail_result"></span>
+                    </div>
+                    <div class="form_phone">
+                        <button class="btn" id="phone_button">Check number</button>
+                        <span class="checker" id="phone_result"></span>
+                    </div>
                     <button class="btn btn_dark btn_min">Перезвонить мне</button>
                 </form>
             </div>

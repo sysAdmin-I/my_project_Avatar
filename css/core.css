@@ -111,6 +111,6 @@ input {
 }
 
 :root {
-    --orange: #ff8600;
+    --orange: rgba(34, 101, 106, 0.84);
     --black: black;
 }
